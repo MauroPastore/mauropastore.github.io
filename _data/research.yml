@@ -59,13 +59,13 @@ publications:
     venue: "arXiv preprint"
     year: 2025
     arxiv: "2506.18431"
-  - type: preprint
-    themes: [deepl]
-    authors: "J. Barbier, F. Camilli, M.-T. Nguyen, M. Pastore, R. Skerk"
-    title: "Statistical mechanics of extensive-width Bayesian neural networks near interpolation"
-    venue: "arXiv preprint"
-    year: 2025
-    arxiv: "2505.24849"
+#  - type: preprint
+#    themes: [deepl]
+#    authors: "J. Barbier, F. Camilli, M.-T. Nguyen, M. Pastore, R. Skerk"
+#    title: "Statistical mechanics of extensive-width Bayesian neural networks near interpolation"
+#    venue: "arXiv preprint"
+#    year: 2025
+#    arxiv: "2505.24849"
   - type: preprint
     themes: [deepl]
     authors: "J. Barbier, F. Camilli, M.-T. Nguyen, M. Pastore, R. Skerk"
