@@ -1,0 +1,45 @@
+# ------------------------------------------------------------
+#  Your details
+# ------------------------------------------------------------
+title: "Mauro Pastore"
+description: "Academic CV: research, teaching and other activities"
+
+author:
+  name: "Mauro Pastore"
+  position: "Postdoctoral researcher"
+  affiliation: "The Abdus Salam International Centre for Theoretical Physics (ICTP)"
+  affiliation_short: "ICTP"
+  address: "Strada Costiera 11, 34151 Trieste, Italy"
+  email: "mpastore@ictp.it"
+  cv_pdf: ""          # e.g. /files/cv.pdf  (leave empty to hide)
+  photo: "/images/MauroP2.jpg"   # your photo in images/, e.g. /images/profile.jpg (leave empty to hide)
+
+# Profile links shown on the home page. Delete or add lines freely.
+links:
+  - name: ORCID
+    url: "https://orcid.org/0000-0002-2771-7437"
+  - name: Google Scholar
+    url: "https://scholar.google.com/citations?user=cNCsqysAAAAJ"
+  - name: arXiv
+    url: "https://arxiv.org/search/advanced?terms-0-operator=AND&terms-0-term=%22mauro+pastore%22&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"
+
+# Top menu, in order
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Teaching
+    url: /teaching/
+  - title: Other activities
+    url: /activities/
+
+# For a site at https://<user>.github.io leave empty.
+# For https://<user>.github.io/<repo> set to "/<repo>".
+baseurl: ""
+
+# ------------------------------------------------------------
+#  Build (no plugins, works with GitHub Pages as-is)
+# ------------------------------------------------------------
+markdown: kramdown
+exclude: [Gemfile, Gemfile.lock, README.md, vendor, .bundle]

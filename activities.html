@@ -1,0 +1,42 @@
+---
+layout: default
+title: Other activities
+permalink: /activities/
+---
+{% assign c = site.data.activities %}
+<h1>Other activities</h1>
+
+{% if c.organisation %}
+<h2>Organisation of scientific events</h2>
+{% include entries.html items=c.organisation %}
+{% endif %}
+
+{% if c.actions %}
+<h2>Collective actions</h2>
+<ul class="actions">
+{% for x in c.actions %}
+  <li>
+    {% if x.logo %}<img src="{{ x.logo | relative_url }}" alt="" class="logo">{% endif %}
+    <div>
+      <a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>{% if x.role %}, {{ x.role }}{% endif %}
+      {% if x.text %}<div class="note">{{ x.text | markdownify }}</div>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if c.committees %}
+<h2>Committees and institutional roles</h2>
+{% include entries.html items=c.committees %}
+{% endif %}
+
+{% if c.refereeing %}
+<h2>Refereeing</h2>
+<p>{{ c.refereeing | join: " · " }}</p>
+{% endif %}
+
+{% if c.outreach %}
+<h2>Outreach</h2>
+{% include entries.html items=c.outreach %}
+{% endif %}

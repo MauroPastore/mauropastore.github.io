@@ -1,0 +1,12 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+
+# Locally installed gems (bundle config path vendor/bundle)
+.bundle/
+vendor/
+Gemfile.lock
+
+# Editor backup and swap files
+*~
+*.swp

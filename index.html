@@ -1,0 +1,48 @@
+---
+layout: default
+title: Home
+---
+{% capture bio %}
+<!-- ===== Biography (Markdown) — edit this paragraph ===== -->
+I am a researcher at the **Abdus Salam International Centre for Theoretical Physics (ICTP)** in Trieste.
+For what I do, have a look at the [research]({{ '/research/' | relative_url }}), [teaching]({{ '/teaching/' | relative_url }}) and [activities]({{ '/activities/' | relative_url }}) pages!
+{% endcapture %}
+{% assign a = site.author %}
+{% assign cv = site.data.cv %}
+
+<section class="intro">
+  {% if a.photo and a.photo != "" %}<img class="portrait" src="{{ a.photo | relative_url }}" alt="{{ a.name }}">{% endif %}
+  <div>
+  <h1>{{ a.name }}</h1>
+  <p class="meta">{{ a.position }}<br>{{ a.affiliation }}<br>{{ a.address }}</p>
+  <p class="links">
+    {{ a.email | replace: "@", " [at] " | replace: ".", " [dot] " }}
+    {% for l in site.links %}{% if l.url != "" %} · <a href="{{ l.url }}">{{ l.name }}</a>{% endif %}{% endfor %}
+    {% if a.cv_pdf != "" %} · <a href="{{ a.cv_pdf | relative_url }}">CV (PDF)</a>{% endif %}
+  </p>
+  </div>
+</section>
+
+{{ bio | markdownify }}
+
+{% if cv.interests %}
+<p class="meta"><strong>Interests:</strong> {{ cv.interests | join: " · " }}</p>
+{% endif %}
+
+{% if cv.news %}
+<h2>News</h2>
+<ul class="entries">
+{% for n in cv.news %}<li><span class="when">{{ n.date }}</span><div>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</div></li>{% endfor %}
+</ul>
+{% endif %}
+
+<h2>Positions</h2>
+{% include entries.html items=cv.positions %}
+
+<h2>Education</h2>
+{% include entries.html items=cv.education %}
+
+{% if cv.awards %}
+<h2>Awards and fellowships</h2>
+{% include entries.html items=cv.awards %}
+{% endif %}

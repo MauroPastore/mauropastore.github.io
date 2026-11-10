@@ -1,0 +1,36 @@
+# Teaching page content.
+
+statement: >-
+ Sharing knowledge and learning together.
+
+courses:
+  - period: "Fall 2026"
+    title: "Mathematical Methods for Physics (lecturer)"
+    place: "ICTP Postgraduate Diploma Programme"
+    details: "20 hours"
+  - period: "Spring 2026"
+    title: "Phase Diagram of Multi-Layer Perceptrons Near Interpolation (lecturer)"
+    place: "Sapienza University"
+    details: "4 hours mini-course"
+  - period: "Spring 2026"
+    title: "A statistical physics perspective on the theory of machine learning (lecturer)"
+    place: "ICTP Spring College in the Physics of Complex Systems"
+    details: "2 weeks intensive course, joint with Bruno Loureiro, [video recordings](https://indico.ictp.it/event/11133/other-view?view=ictptimetable)"
+  - period: "Winter 2023"
+    title: "Statistical mechanics (lecturer)"
+    place: "African Institute for Mathematical Sciences (AIMS) – Senegal"
+    details: "30 hours"
+  - period: "Winter 2022"
+    title: "Statistical mechanics (lecturer)"
+    place: "African Institute for Mathematical Sciences (AIMS) – Senegal"
+    details: "30 hours, joint with Fabián Aguirre-López"
+  - period: "Spring and fall 2019"
+    title: "Quantum mechanics (tutor)"
+    place: "Milan University"
+    details: "60 hours in total"
+    
+
+# Downloadable material: put the files in a folder called files/
+#materials:
+#  - title: "Lecture notes: Topic"
+#    url: "/files/lecture-notes.pdf"

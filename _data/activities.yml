@@ -1,0 +1,55 @@
+# Collective activities: service to the community, organisation, outreach.
+
+organisation:
+  - period: "2023"
+    title: "Journées Interdisciplinaires de Physique Statistique (co-organiser)"
+    place: "Orsay, France"
+    url: "https://sites.google.com/view/lptms-jips/home"
+    
+actions:
+  - title: "Slow Science"
+    url: "https://www.slow-science.com/"
+    role: "Promoter"
+    logo: "/images/logo-slow-science.png"
+    text: "A movement advocating for a more thoughtful, sustainable approach to research that values quality over quantity and depth over speed."
+  - title: "NePeRo"
+    url: "https://www.npr-nepero.org/nepero/"
+    role: "Member"
+    logo: "/images/logo-nepero.png"
+    text: "The **Ne**twork of **P**r**e**carious **R**esearchers, to reclaim Science from the bottom."
+  - title: "CNRS postdoc salaries"
+    url: "https://adigioacchino.github.io/CNRSPostdocSalary/index.html"
+    role: "Curator"
+    text: "A website collecting and comparing postdoc salaries at various French institutions."
+
+refereeing:
+  - "SciPost Physics"
+  - "Nature"
+  - "Journal of Statistical Physics"
+  - "Physical Review Letters"
+  - "Physical Review X"
+  - "Physical Review E"
+  - "Physical Review A"
+  - "EPL"
+  - "Journal of Statistical Mechanics"
+  - "ICLR 2024, 2025"
+  - "NeurIPS 2026"
+
+committees:
+  - period: "2025 – present"
+    title: "Postdoc representative"
+    place: "ICTP, QLS section"
+
+outreach:
+  - period: "2026"
+    title: "Science festival"
+    place: "Trieste Next 2026"
+    details: "Public engagement at the ICTP stand"
+  - period: "2026"
+    title: "Public lecture"
+    place: "Immaginario Scientifico, Trieste"
+    details: "The physics of complex systems and neural networks"
+  - period: "2025"
+    title: "Public lecture"
+    place: "Trieste Next 2025"
+    details: "Artificial Intelligence (aimed at high school students)"

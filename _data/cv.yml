@@ -1,0 +1,27 @@
+# Home page content: positions, education, awards, news.
+# Replace the placeholder entries with your own. Markdown is allowed in "details".
+
+interests:
+  - Machine learning
+  - Statistical physics
+  - Complex systems
+
+positions:
+  - period: "2024 – present"
+    title: "Postdoctoral Researcher"
+    place: "ICTP, Trieste, Italy"
+    details: "Quantitative Life Sciences"
+  - period: "2023 – 2024"
+    title: "Postdoctoral Researcher"
+    place: "LPENS, Paris, France"
+    details: "Statistical physics and inference for biology"
+  - period: "2021 – 2023"
+    title: "Postdoctoral Researcher"
+    place: "LPTMS, Orsay, France"
+    details: "Simons Collaboration on Cracking the Glass Problem"
+
+education:
+  - period: "2017 – 2020"
+    title: "Ph.D. in Physics"
+    place: "University of Milan, Italy"
+    details: "Thesis: *Replicas in complex systems: applications to large deviations and neural networks*. Advisor: Prof. Sergio Caracciolo."

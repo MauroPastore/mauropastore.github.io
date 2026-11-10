@@ -1,0 +1,29 @@
+---
+layout: default
+title: Teaching
+permalink: /teaching/
+---
+{% assign t = site.data.teaching %}
+<h1>Teaching</h1>
+
+<p>{{ t.statement }}</p>
+
+<h2>Courses</h2>
+{% include entries.html items=t.courses %}
+
+{% if t.schools %}
+<h2>Schools and lecture series</h2>
+{% include entries.html items=t.schools %}
+{% endif %}
+
+{% if t.supervision %}
+<h2>Student supervision</h2>
+{% include entries.html items=t.supervision %}
+{% endif %}
+
+{% if t.materials %}
+<h2>Teaching material</h2>
+<ul>
+{% for m in t.materials %}<li><a href="{{ m.url | relative_url }}">{{ m.title }}</a></li>{% endfor %}
+</ul>
+{% endif %}

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+{% assign r = site.data.research %}
+<h1>Research</h1>
+
+<p>{{ r.summary | markdownify }}</p>
+
+{% for t in r.themes %}
+<h2>{{ t.title }}</h2>
+<div class="theme{% if t.image_full %} theme-full{% endif %}">
+  {% if t.image %}
+  <figure class="theme-fig">
+    <img src="{{ t.image | relative_url }}" alt="{{ t.image_alt | default: t.title }}" loading="lazy">
+    {% if t.caption %}<figcaption>{{ t.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+  <div class="theme-text">
+    {{ t.text | markdownify }}
+    {% assign theme_pubs = r.publications | where: "themes", t.id %}
+    {% if theme_pubs.size > 0 %}
+    <h3>Publications</h3>
+    {% include pubs.html items=theme_pubs %}
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+{% assign other_pubs = r.publications | where_exp: "p", "p.themes == nil" %}
+{% if other_pubs.size > 0 %}
+<h2>Other publications</h2>
+{% include pubs.html items=other_pubs %}
+{% endif %}
+
+{% if r.talks %}
+<h2>Talks</h2>
+{% include entries.html items=r.talks %}
+{% endif %}
+
+{% if r.grants %}
+<h2>Grants and projects</h2>
+{% include entries.html items=r.grants %}
+{% endif %}

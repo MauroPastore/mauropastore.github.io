@@ -1,0 +1,16 @@
+{% comment %}
+  Numbered publication list, newest first.
+  Usage: {% include pubs.html items=some_list %}
+{% endcomment %}
+{% assign sorted = include.items | sort: "year" | reverse %}
+<ol class="pubs">
+  {% for p in sorted %}
+  <li><div class="pub">
+    {{ p.authors }}, <cite>{{ p.title }}</cite>, {{ p.venue }} ({{ p.year }}).
+    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+    {% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
+    {% if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
+    {% if p.url %}<a href="{{ p.url }}">Link</a>{% endif %}
+  </div></li>
+  {% endfor %}
+</ol>

@@ -1,0 +1,187 @@
+# Research page content.
+
+summary: >-
+  Statistical physics is the science of how many interacting parts behave collectively, whether atoms in a fluid, neurons in a network or the residues of a protein. My research sits at the crossroads of statistical physics, computer science and biology.
+
+themes:
+  - id: deepl
+    title: "Asymptotics of feature learning in deep neural networks"
+    image: "/images/theme-deep-learning.gif"
+    image_alt: "Animated deep neural network lighting up layer by layer"
+    text: "Statistical-mechanics theory of when and how deep networks go beyond kernel behavior, from random features and lazy training to the specialization transition near interpolation."
+  - id: struct
+    title: "Machine learning of structured data"
+    image: "/images/theme-structured-data.png"
+    image_alt: "Classification of points on low-dimensional simplexes"
+    text: "How data structure shapes learning, from geometrically structured inputs to class imbalance."
+  - id: bio
+    title: "Inference methods for biology"
+    image: "/images/theme-biology.svg"
+    image_alt: "An RBM whose visible units are RNA nucleotides"
+    text: "Biological data classification with severely imbalanced training sets, modeling experiments of *directed evolution* of biological molecules via unsupervised methods."
+  - id: rnn
+    title: "Non-reciprocal synaptic connections in recurrent neural networks"
+    text: "Storage capacity of recurrent neural networks with asymmetric couplings, as minimal models of biological synapses."
+    image: "/images/theme-recurrent-networks.gif"
+    image_alt: "A stored memory, the ICTP logo, retrieved from a noisy configuration"
+  - id: spin
+    title: "Theory of spin glasses"
+    image: "/images/theme-spin-glasses.png"
+    image_alt: "A rugged energy landscape"
+    text: "Large deviations of the free energy in disordered systems, glassy behavior in frustrated spin models without quenched disorder, quantum perceptrons."
+  - id: qft
+    title: "Non-perturbative quantum field theory"
+    image: "/images/theme-qft.svg"
+    image_alt: "Triangle diagram of the axial anomaly: an axial current coupled to two gluons through a quark loop"
+    text: "Deriving effective theories of composite particles from first principles."
+
+# type: article | preprint | proceedings | book | thesis
+# Fields: authors, title, venue, year, doi, arxiv, pdf, url (all optional except title/year)
+publications:
+  - type: article
+    themes: [deepl]
+    authors: "J. Barbier, F. Camilli, M.-T. Nguyen, M. Pastore, R. Skerk"
+    title: "Statistical physics of deep learning: Optimal learning of a multi-layer perceptron near interpolation"
+    venue: "Phys. Rev. X 16, 031014"
+    year: 2026
+    doi: "10.1103/56sb-pdh6"
+  - type: preprint
+    themes: [bio]
+    authors: "K. S. Shimagaki, J. Fernandez-de-Cossio-Diaz, M. Pastore, R. Monasson, S. Cocco, J. P. Barton"
+    title: "A high-order cumulant extension of quasi-linkage equilibrium"
+    venue: "arXiv preprint"
+    year: 2026
+    arxiv: "2509.10987"
+  - type: preprint
+    themes: [spin]
+    authors: "M. Pastore"
+    title: "Comment on Storage properties of a quantum perceptron"
+    venue: "arXiv preprint"
+    year: 2025
+    arxiv: "2506.18431"
+  - type: preprint
+    themes: [deepl]
+    authors: "J. Barbier, F. Camilli, M.-T. Nguyen, M. Pastore, R. Skerk"
+    title: "Statistical mechanics of extensive-width Bayesian neural networks near interpolation"
+    venue: "arXiv preprint"
+    year: 2025
+    arxiv: "2505.24849"
+  - type: preprint
+    themes: [deepl]
+    authors: "J. Barbier, F. Camilli, M.-T. Nguyen, M. Pastore, R. Skerk"
+    title: "Optimal generalisation and learning transition in extensive-width shallow neural networks near interpolation"
+    venue: "arXiv preprint"
+    year: 2025
+    arxiv: "2501.18530"
+  - type: article
+    themes: [bio]
+    authors: "E. Loffredo, M. Pastore, S. Cocco, R. Monasson"
+    title: "Restoring data balance via generative models of T cell receptors for antigen-binding prediction"
+    venue: "eLife14:RP107803"
+    year: 2024
+    doi: "10.7554/eLife.107803.1"
+  - type: article
+    themes: [deepl]
+    authors: "F. Bassetti, M. Gherardi, A. Ingrosso, M. Pastore, P. Rotondo"
+    title: "Feature learning in finite-width Bayesian deep linear networks with multiple outputs and convolutional layers"
+    venue: "Journal of Machine Learning Research 26(88):1-35"
+    year: 2024
+    url: "http://jmlr.org/papers/v26/24-1158.html"
+  - type: article
+    themes: [struct]
+    authors: "E. Loffredo, M. Pastore, S. Cocco, R. Monasson"
+    title: "Restoring balance: principled under/oversampling of data for optimal classification"
+    venue: "ICML"
+    year: 2024
+    url: "https://proceedings.mlr.press/v235/loffredo24a.html"
+  - type: article
+    themes: [deepl]
+    authors: "F. Aguirre-López, S. Franz, M. Pastore"
+    title: "Random features and polynomial rules"
+    venue: "SciPost Phys. 18, 039"
+    year: 2025
+    doi: "10.21468/SciPostPhys.18.1.039"
+  - type: article
+    themes: [deepl]
+    authors: "R. Pacelli, S. Ariosto, M. Pastore, F. Ginelli, M. Gherardi, P. Rotondo"
+    title: "A statistical mechanics framework for Bayesian deep neural networks beyond the infinite-width limit"
+    venue: "Nature Machine Intelligence 5 (12), 1497-1507"
+    year: 2023
+    doi: "10.1038/s42256-023-00767-6"
+  - type: article
+    themes: [rnn]
+    authors: "F. Aguirre-López, M. Pastore, S. Franz"
+    title: "Satisfiability transition in asymmetric neural networks"
+    venue: "J. Phys. A: Math. Theor. 55 305001"
+    year: 2022
+    doi: "10.1088/1751-8121/ac79e5"
+  - type: article
+    themes: [struct]
+    authors: "M. Pastore"
+    title: "Critical properties of the SAT/UNSAT transitions in the classification problem of structured data"
+    venue: "J. Stat. Mech. (2021) 113301"
+    year: 2021
+    doi: "10.1088/1742-5468/ac312b"
+  - type: article
+    themes: [spin]
+    authors: "V. Erba, M. Pastore, P. Rotondo"
+    title: "Self-induced glassy phase in multimodal cavity quantum electrodynamics"
+    venue: "Phys. Rev. Lett. 126, 183601"
+    year: 2021
+    doi: "10.1103/PhysRevLett.126.183601"
+  - type: article
+    themes: [struct]
+    authors: "M. Pastore, P. Rotondo, V. Erba, M. Gherardi"
+    title: "Statistical learning theory of structured data"
+    venue: "Phys. Rev. E 102, 032119"
+    year: 2020
+    doi: "10.1103/PhysRevE.102.032119"
+  - type: article
+    themes: [struct]
+    authors: "P. Rotondo, M. Pastore, M. Gherardi"
+    title: "Beyond the storage capacity: data driven satisfiability transition"
+    venue: "Phys. Rev. Lett. 125, 120601"
+    year: 2020
+    doi: "10.1103/PhysRevLett.125.120601"
+  - type: article
+    themes: [spin]
+    authors: "M. Pastore, A. Di Gioacchino, P. Rotondo"
+    title: "Large deviations of the free energy in the p-spin glass spherical model"
+    venue: "Phys. Rev. Research 1, 033116"
+    year: 2019
+    doi: "10.1103/PhysRevResearch.1.033116"
+  - type: article
+    themes: [qft]
+    authors: "S. Caracciolo, M. Pastore"
+    title: "Lattice QCD<sub>2</sub> effective action with Bogoliubov transformations"
+    venue: "PoS, Confinement2018"
+    year: 2019
+    doi: "10.22323/1.336.0056"
+  - type: article
+    themes: [qft]
+    authors: "S. Caracciolo, M. Pastore"
+    title: "Effective mesonic theory for the 't Hooft model on the lattice"
+    venue: "Ann. Phys. 403, 152"
+    year: 2018
+    doi: "10.1016/j.aop.2019.02.007"
+  - type: thesis
+    themes: [spin]
+    authors: "M. Pastore"
+    title: "Replicas in complex systems: applications to large deviations
+and neural networks"
+    venue: "Ph.D. thesis, University of Milan"
+    year: 2020
+    url: "https://hdl.handle.net/2434/778413"
+
+#talks:
+#  - period: "Sep 2026"
+#    title: "Title of the talk"
+#    place: "Workshop on Topic, ICTP, Trieste (invited)"
+#  - period: "Jun 2025"
+#    title: "Title of the talk"
+#    place: "Conference Name, City"
+
+#grants:
+#  - period: "2025 – 2027"
+#    title: "Grant or project name"
+#    place: "Funding agency — role (PI / co-PI / member)"

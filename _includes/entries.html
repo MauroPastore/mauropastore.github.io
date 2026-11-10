@@ -1,0 +1,22 @@
+{% comment %}
+  Dated list. Usage: {% include entries.html items=site.data.cv.positions %}
+  Fields per item: period, title, place, details (Markdown, optional),
+  image (e.g. /images/workshop.jpg), image_alt, caption (all optional)
+{% endcomment %}
+<ul class="entries">
+{% for e in include.items %}
+  <li>
+    <span class="when">{{ e.period }}</span>
+    <div>
+      <strong>{% if e.url %}<a href="{{ e.url }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</strong>{% if e.place %}, {{ e.place }}{% endif %}
+      {% if e.details %}<div class="note">{{ e.details | markdownify }}</div>{% endif %}
+      {% if e.image %}
+      <figure>
+        <img src="{{ e.image | relative_url }}" alt="{{ e.image_alt | default: e.caption | default: e.title }}" loading="lazy">
+        {% if e.caption %}<figcaption>{{ e.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>
