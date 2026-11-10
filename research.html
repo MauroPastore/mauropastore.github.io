@@ -18,7 +18,7 @@ permalink: /research/
   </figure>
   {% endif %}
   <div class="theme-text">
-    {{ t.text | markdownify }}
+    <div class="theme-lead">{{ t.text | markdownify }}</div>
     {% assign theme_pubs = r.publications | where: "themes", t.id %}
     {% if theme_pubs.size > 0 %}
     <h3>Publications</h3>

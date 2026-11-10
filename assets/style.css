@@ -107,3 +107,8 @@ figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
   .theme { display: flex; flex-direction: column; }
   .theme-fig { float: none; width: auto; max-width: 22rem; margin: 0.5rem 0 1rem; order: 2; }
 }
+
+.theme-lead { font-style: italic; font-size: 1.1rem; line-height: 1.5; color: var(--muted); }
+.theme-lead p { margin-bottom: 0.6rem; }
+.theme-lead em { font-style: normal; }   /* Markdown *emphasis* stays visible inside italics */
+.theme { margin-top: -0.25rem; }
